@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="Stykes/Estilo.css"> 
+    <link rel="stylesheet" href="Stykes/Iniciar.css">
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Sobre Nosotros</a></li>
+                    <li><a href="vistas.html" class="active">Vistas</a></li>
+                    <li><a href="Reseñas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" id="buscador" placeholder="🔍 Buscar por Estado..."> 
+            </div>
+        </div>
+    </header>
+     <div class="contenedor-fondo">
+        <div class="formulario-inicio-sesion">
+            <div class="icono-usuario"></div>
+
+            <h2>Registro de Usuario</h2> 
+
+            <form action="#" method="POST">
+                <div class="grupo-entrada">
+                    <label for="nombre_usuario">Nombre de Usuario</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Elige un Nombre de Usuario" required>
+                </div>
+                
+                <div class="grupo-entrada">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                
+                <div class="grupo-entrada">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 777-026-0127" required>
+                </div>
+                
+                <div class="grupo-entrada">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña segura " required>
+                </div>
+                
+                <button type="submit" class="boton-registro">Registrarme</button>
+                
+                <p class="registro-enlace">
+                    ¿Ya tienes cuenta? <a href="IniciarSesion.html" class="enlace-rojo">Iniciar Sesión</a>
+                </p>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

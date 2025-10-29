@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="Stykes/Estilo.css"> 
+    <link rel="stylesheet" href="Stykes/Iniciar.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Sobre Nosotros</a></li>
+                    <li><a href="vistas.html" class="active">Vistas</a></li>
+                    <li><a href="Reseñas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" id="buscador" placeholder="🔍 Buscar por Estado..."> 
+            </div>
+        </div>
+    </header>
+     <div class="contenedor-fondo">
+        <div class="formulario-inicio-sesion">
+            <div class="icono-usuario"></div>
+
+            <h2>Inicio de Sesión</h2>
+
+            <form action="#" method="POST">
+                <div class="grupo-entrada">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+                
+                <div class="grupo-entrada">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                </div>
+                
+                <div class="grupo-botones">
+                    <button type="button" class="boton-continuar" onclick="window.location.href='index.html'">Continuar</button>
+                    
+                    <button type="button" class="boton-cancelar" onclick="window.location.href='index.html'">Cancelar</button>
+                </div>
+                
+                <p class="registro-enlace">
+                    ¿No tienes cuenta? <a href="Registrate.html" class="enlace-rojo">Regístrate</a>
+                </p>
+                </form>
+        </div>
+    </div>
+
+</body>
+</html>

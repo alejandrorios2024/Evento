@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333;
+}
+
+.contenedor-fondo {
+    background-image: url('../Imagen/FondoOriginal.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.formulario-inicio-sesion {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    max-width: 90%;
+}
+
+.icono-usuario {
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%; 
+    margin: 0 auto 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-usuario::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ddd; /* Tono gris/blanco para la silueta */
+    top: 25px;
+}
+
+/* Forma del cuerpo del usuario */
+.icono-usuario::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    border-radius: 50% 50% 0 0; /* Borde superior redondeado */
+    background-color: #ddd;
+    bottom: 20px;
+}
+/* Título */
+h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #444;
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+.grupo-entrada {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.grupo-entrada label {
+    /* La etiqueta no se muestra como texto, sino que se usa para el título */
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.grupo-entrada input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 1.05em;
+    background-color: #fefefe; /* Fondo casi blanco para los campos */
+    transition: border-color 0.3s;
+}
+
+.grupo-entrada input:focus {
+    border-color: #5a99e5; /* Color al enfocar */
+    outline: none;
+}
+
+/* Estilos para el contenedor de los botones */
+.grupo-botones {
+    display: flex; /* Permite colocar los botones uno al lado del otro */
+    gap: 10px;     /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilo base para ambos botones */
+.grupo-botones button {
+    flex-grow: 1; /* Hace que ambos botones ocupen el mismo ancho disponible */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el botón de Continuar (Principal) */
+.boton-continuar {
+    background-color: #3498db; /* Un color de acción principal, azul por ejemplo */
+    color: white;
+}
+
+.boton-continuar:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el botón de Cancelar (Secundario) */
+.boton-cancelar {
+    background-color: #ecf0f1; /* Un color claro/neutro */
+    color: #333;
+    border: 1px solid #bdc3c7;
+}
+
+.boton-cancelar:hover {
+    background-color: #dcdde1;
+}
+
+/* Asegúrate de mantener el estilo del enlace rojo */
+.registro-enlace {
+    text-align: center;
+    margin-top: 15px; 
+    font-size: 14px;
+}
+
+.enlace-rojo {
+    color: #e74c3c; /* Rojo */
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.enlace-rojo:hover {
+    text-decoration: underline;
+}

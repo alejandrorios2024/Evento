@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a9d6d8;
+    padding: 10px 20px;
+    border-bottom: 2px solid #008c9e;
+}
+
+/* Icono (simulado con X o emoji) */
+.icono {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de búsqueda */
+.busqueda {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.busqueda input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+main img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+main p {
+    max-width: 400px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    main img {
+        width: 100%;
+    }
+}
+/*links*/
+.SobreNostros{
+    padding: auto;
+}
+.Vistas{
+    padding: auto;
+}
+.Reseñas{
+    padding: auto;
+}
+
+.icono{
+    font-weight: 20;
+    font: optional;
+    font-size: large;
+}
