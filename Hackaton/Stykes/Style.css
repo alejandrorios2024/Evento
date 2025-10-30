@@ -3,7 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
 }
-
+/* Estilo para hacer la imagen redondeada/ovalada */
+.imagen-costa {
+    border-radius: 50%; /* Esto crea la forma redondeada/ovalada */
+    /* Opcional: Asegúrate de que la imagen tenga un tamaño fijo para mejor control */
+    /* width: 300px;
+    height: 200px; */ 
+}
 /* Encabezado */
 header {
     display: flex;
